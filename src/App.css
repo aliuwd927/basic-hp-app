@@ -43,3 +43,13 @@ body {
   border: 1px solid red;
   flex-direction: column;
 }
+
+.car_con {
+  border: 1px solid black;
+  display: flex;
+  flex-direction: row;
+}
+
+button {
+  border: 1px solid green;
+}
