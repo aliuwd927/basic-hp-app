@@ -4,18 +4,19 @@ import imageThree from "./img/700x300.png"
 
 function ImgCarousel(){
   let imgArray = [imageOne, imageTwo, imageThree];
-  // imgArray.map((imgElement,index) =>{
-  //   console.log(imgElement,index);
-  // })
-
+  let currentValue = 0;
   function btnClick(event){
-    console.log(event.target.innerHTML)
+   //console.log( Number(event.target.attributes[0].value))
+   let changeImg = Number(event.target.attributes[0].value);
+   currentValue += changeImg;
+   console.log(currentValue)
   }
+
   return (
     <div className="car_con">
-      <button onClick = {btnClick}>Previous</button>
-      <img src={imgArray[0]} alt="place holder" />
-      <button onClick ={btnClick}>Advance</button>
+      <button onClick = {btnClick} data-back = "-1">Back</button>
+      <img src={imgArray[currentValue]} alt="place holder" />
+      <button onClick ={btnClick} data-next = "1">Next</button>
     </div>
   );
 }
