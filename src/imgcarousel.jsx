@@ -19,7 +19,7 @@ function ImgCarousel(){
   }
 
   return (
-    <div className="car_con">
+    <div className="carousel_Container">
       <button onClick = {btnClick} data-back = "-1">Back</button>
       <img src={imgArray[currentValue]} alt="place holder" />
       <button onClick ={btnClick} data-next = "1">Next</button>
