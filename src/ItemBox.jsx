@@ -1,9 +1,12 @@
+import image150 from "./img/150.png"
+
 function ItemBox(){
-  const numOfBox = [1,2,3,4,5,6,7,8,9];
-  let display = numOfBox.map(element =>{
-    return <h1 key={element}>{element}</h1>
-  })
-return <div>{display}</div>
+  const numOfBox = 9
+  let displayArray = [];
+    for(let i = 0; i < numOfBox; i++){
+       displayArray.push(<img src={image150}/>)
+    }
+  return displayArray;
 }
 
 export default ItemBox;
