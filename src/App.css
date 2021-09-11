@@ -35,13 +35,7 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-}
-
-.article_Sub_Container {
-  /*Added Flex bc articleCon does not affect sub-chld.*/
-  display: flex;
-  border: 1px solid red;
-  flex-direction: column;
+  gap: 1rem;
 }
 
 .carousel_Container {
@@ -52,4 +46,22 @@ body {
 
 button {
   border: 1px solid green;
+}
+
+.article_Sub_Container_One {
+  border: 1px solid red;
+}
+
+.article_Sub_Container_Two {
+  border: 1px solid blue;
+}
+
+.location_Text {
+  text-align: center;
+}
+.array_Container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1 fr);
+  gap: 1rem;
 }

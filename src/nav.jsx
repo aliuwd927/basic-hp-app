@@ -1,6 +1,6 @@
 function NavBar() {
-  let navUI = (
-      <nav className = "navBar_container">
+  return (
+    <nav className = "navBar_container">
         <ul className ="navBar_ul">
           <li className ="navBar_li">Home</li>
           <li className ="navBar_li">Skates</li>
@@ -9,6 +9,5 @@ function NavBar() {
         </ul>
       </nav>
   );
-  return navUI;
 }
 export default NavBar;

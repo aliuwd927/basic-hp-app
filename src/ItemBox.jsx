@@ -4,9 +4,13 @@ function ItemBox(){
   const numOfBox = 9
   let displayArray = [];
     for(let i = 0; i < numOfBox; i++){
-       displayArray.push(<img src={image150}/>)
+       displayArray.push(<img src={image150} alt="grey box"/>)
     }
-  return displayArray;
+  return (
+    <div className="array_Container">
+      {displayArray}
+    </div>
+  );
 }
 
 export default ItemBox;
