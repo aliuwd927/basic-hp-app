@@ -7,8 +7,9 @@ function ItemBox(){
        displayArray.push(<img src={image150} alt="grey box"/>)
     }
   return (
-    <div className="array_Container">
-      {displayArray}
+    <div className="article_Sub_Container_Two">
+      <h1 className="location_Text">Location</h1>
+      <section className="array_Container">{displayArray}</section>
     </div>
   );
 }
