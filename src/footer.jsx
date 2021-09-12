@@ -1,7 +1,11 @@
+import FooterHead from "./footerHeader";
+import FooterMain from "./footerMain";
+
 function FooterSection(){
   return (
     <div className = "footer_Container">
-      <footer>Footer</footer>
+     <FooterHead />
+     <FooterMain /> 
     </div>
   );
 }

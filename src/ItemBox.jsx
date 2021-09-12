@@ -4,7 +4,7 @@ function ItemBox(){
   const numOfBox = 9
   let displayArray = [];
     for(let i = 0; i < numOfBox; i++){
-       displayArray.push(<img  className ="placeHolder_Img"src={image150} alt="grey box"/>)
+       displayArray.push(<img  className ="placeHolder_Img"src={image150} alt="grey box" key={i}/>)
     }
   return (
     <div className="article_Sub_Container_Two">
