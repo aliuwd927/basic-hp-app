@@ -10,6 +10,15 @@ body {
   max-width: 100vw;
 }
 
+.App {
+  border: 5px solid green;
+}
+
+.navBar_Container {
+  border: 1px solid red;
+  width: 100%;
+}
+
 .navBar_ul {
   list-style: none;
   font-size: 1.5rem;
@@ -19,11 +28,14 @@ body {
   justify-content: flex-end;
   padding: 1rem;
   gap: 1rem;
+  border: 1px solid greenyellow;
 }
 
 .navBar_li {
   border: 1px solid black;
+  font-size: 1rem;
   padding: 1rem;
+  text-align: center;
 }
 
 .article_Container {
@@ -52,6 +64,7 @@ body {
 
 .carousel_Img,
 .carousel_Container_Img {
+  height: 100%;
   width: 100%;
 }
 
@@ -59,6 +72,8 @@ body {
   border: 1px solid red;
   width: 100%;
   text-align: center;
+  display: flex;
+  flex-direction: row;
 }
 
 .article_Sub_Container_Two {
