@@ -7,8 +7,7 @@ function ImgCarousel(){
   let imgArray = [imageOne, imageTwo, imageThree];
   let [currentValue, setCurrentValue] = useState(0);
   function btnClick(event){
-    console.log(event)
-   //console.log( Number(event.target.attributes[0].value))
+   //console.log( Number(event.target.attributes[1].value))
    let changeImg = Number(event.target.attributes[1].value);
    setCurrentValue(currentValue + changeImg);
    if(currentValue >2){
