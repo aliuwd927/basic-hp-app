@@ -19,10 +19,14 @@ function ImgCarousel(){
   }
 
   return (
-    <div className="carousel_Container">
-      <button onClick = {btnClick} data-back = "-1">Back</button>
-      <img src={imgArray[currentValue]} alt="place holder" />
-      <button onClick ={btnClick} data-next = "1">Next</button>
+    <div className="carousel_Container_Main">
+      <div className="carousel_Container_Sub">
+        <button className="carousel_Prev" onClick = {btnClick} data-back = "-1">Back</button>
+        <div className="carousel_Container_Img">
+         <img className="carousel_Img"src={imgArray[currentValue]} alt="place holder" />
+        </div>
+        <button className="carousel_Next"onClick ={btnClick} data-next = "1">Next</button>
+      </div>
     </div>
   );
 }
